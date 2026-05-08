@@ -1,0 +1,46 @@
+---
+/* 评论组件 */
+---
+
+<div class="card-base p-6 mb-4 onload-animation">
+    <div id="Comments"></div>
+</div>
+
+<!-- 引入 Artalk 的 CSS -->
+<link href="https://unpkg.com/artalk/dist/Artalk.css" rel="stylesheet" />
+
+<script>
+    import Artalk from 'artalk'
+
+    const artalk = Artalk.init({
+        el: '#Comments',
+        pageKey: window.location.pathname,
+        pageTitle: document.title,
+        server: 'https://bdot.in', // 如果你后端有专门域名（如 api.bdot.in），请修改这里
+        site: 'My Blog Site',          // 对应你截图中的“默认站点名”
+        darkMode: document.documentElement.classList.contains('dark'),
+    })
+
+    // 监听 Fuwari 的暗色模式切换
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                const isDark = document.documentElement.classList.contains('dark')
+                artalk.setDarkMode(isDark)
+            }
+        })
+    })
+
+    observer.observe(document.documentElement, { attributes: true })
+</script>
+
+<style is:global>
+    /* 适配 Fuwari 的 UI 风格 */
+    #Comments {
+        --at-color-primary: var(--primary) !important;
+        --at-color-bg: transparent !important;
+    }
+    .dark #Comments {
+        --at-color-font: rgba(255,255,255,0.8) !important;
+    }
+</style>
