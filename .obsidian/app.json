@@ -1,0 +1,16 @@
+{
+  "attachmentFolderPath": "/",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "src/content/posts",
+  "userIgnoreFilters": [
+    "node_modules/",
+    ".astro/",
+    "dist/",
+    "public/",
+    "scripts/",
+    ".github/",
+    ".git/"
+  ],
+  "useMarkdownLinks": true,
+  "showUnsupportedFiles": false
+}
