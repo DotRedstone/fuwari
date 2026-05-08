@@ -1,6 +1,6 @@
 ---
 title: 我的第一篇文章
-published: 2024-05-08
+published: 2026-05-09
 description: '欢迎来到我的新博客。'
 image: ''
 tags: [随笔]
