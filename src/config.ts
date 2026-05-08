@@ -8,8 +8,8 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-  title: "文不加点",
-  subtitle: "点到为止",
+  title: "DotRedstone",
+  subtitle: "DotRedstone",
   lang: "zh_CN",
   themeColor: {
     hue: 250, // 主题色的默认色调，从 0 到 360
@@ -54,8 +54,8 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
   avatar: "https://oss.bdot.in/avatar/ee42c2b3569583cad9b857e954d90de3.png", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
-  name: "点点",
-  bio: "点到为止",
+  name: "点",
+  bio: "DotRedstone",
   links: [
     {
       name: "GitHub",
