@@ -43,3 +43,9 @@ yarn.lock
 .obsidian/graph.json
 .obsidian/appearance.json
 .obsidian/plugins/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
