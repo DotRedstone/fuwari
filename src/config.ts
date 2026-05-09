@@ -12,7 +12,7 @@ export const siteConfig: SiteConfig = {
   subtitle: "DotRedstone",
   lang: "zh_CN",
   themeColor: {
-    hue: 330, // 主题色的默认色调，从 0 到 360
+    hue: 250, // 主题色的默认色调，从 0 到 360
     fixed: false, // 是否对访客隐藏主题色选择器
   },
   banner: {
@@ -55,7 +55,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
   avatar: "https://oss.bdot.in/avatar/ee42c2b3569583cad9b857e954d90de3.png", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
   name: "点",
-  bio: "",
+  bio: "DotRedstone",
   links: [
     {
       name: "GitHub",
